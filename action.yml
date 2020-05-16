@@ -1,0 +1,16 @@
+name: 'Sheddit Post'
+description: 'Celebrate your commits with the world.'
+inputs:
+    serverurl:
+        description: 'This is the url which points to Sheddit server.'
+        required: true
+    tweet:
+        description: 'This is the body of your tweet.'
+        required: true
+        default: 'We just pushed a new feature!🥳'
+outputs:
+    message:
+        description: 'Status message'
+runs:
+    using: 'node12'
+    main: 'index.js'
