@@ -4,7 +4,7 @@ const axios = require("axios");
 try {
   const tweet = core.getInput("tweet");
   const serverUrl = core.getInput("serverurl");
-  scheduleTweet(tweet, serverUrl, scheduletime);
+  scheduleTweet(tweet, serverUrl);
 } catch (error) {
   core.setFailed(error.message);
 }
